@@ -164,8 +164,11 @@ int main()
 {
 	int MAX=20;
 	char infix[100],*stack;
+	//clrscr();
 	stack=(char*) malloc(MAX);
 	printf("Enter the infix expression:");
 	gets(infix);
     infix_postfix(infix,stack,MAX);
+	getch();
+	return 0;
 }
